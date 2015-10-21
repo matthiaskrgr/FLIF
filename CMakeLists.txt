@@ -34,7 +34,7 @@ else()
 endif()
 
 # Use cmake -DCMAKE_CXX_FLAGS=-pg to support other build types.
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -O3")
 set(CMAKE_CXX_FLAGS_DEBUG "-ggdb3")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
