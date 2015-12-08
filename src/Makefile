@@ -87,8 +87,7 @@ test-interface: libflif.dbg.so ../tools/test.c
 
 test: flif test-interface
 	./test-interface
-	../tools/test-roundtrip.sh ../tools/2_webp_ll.png
-	../tools/test-roundtrip.sh ../tools/kodim01.png
+	../tools/test-roundtrip.sh ../
 
 flif.stats: $(FILES_H) $(FILES_CPP) flif.cpp
 	$(CXX) -std=gnu++11 $(CXXFLAGS) -DSTATS $(OPTIMIZATIONS) -g0 -Wall $(FILES_CPP) flif.cpp $(LDFLAGS) -o flif.stats
