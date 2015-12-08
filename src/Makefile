@@ -86,6 +86,7 @@ test-interface: libflif.dbg.so ../tools/test.c
 	$(CC) -O0 -ggdb3 -Wall -Ilibrary/ ../tools/test.c -L. -lflif.dbg  -o test-interface
 
 test: flif test-interface
+	mkdir -p ../tmp-test
 	./test-interface
 	../tools/test-roundtrip.sh ../
 
